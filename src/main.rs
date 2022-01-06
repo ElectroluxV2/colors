@@ -2,6 +2,18 @@ use crate::Color::{Orange, Red};
 
 fn main() {
     println!("Normal {} Text {}", Red.write("Red text"), Orange.write("Orange text"));
+
+    println!("{} days", 3/* TODO */);
+
+    println!("{0}, this is {1}. {1}, this is {0}.", "Alice", "Bob");
+
+    println!("Today's agenda is: {}, {0} and {subject}.", subject = "Math");
+
+    println!("{:b}", 2137);
+
+    println!("{number:0>width$}", number = 1, width = 6);
+
+    println!("{:05.2}€", 5.2);
 }
 
 #[derive(Debug)]
